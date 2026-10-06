@@ -19,6 +19,7 @@ app.get("/api/health", (req, res) => {
 
 // Routes
 app.use("/api/patients", require("./routes/patientRoutes"));
+app.use("/api/consultations", require("./routes/consultationRoutes"));
 
 // 404
 app.use((req, res) => {
